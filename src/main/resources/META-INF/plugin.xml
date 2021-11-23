@@ -1,11 +1,11 @@
 <idea-plugin>
     <id>pers.liangxuyuan.language.my-language-support</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>My Language Support</name>
+    <vendor>liangxuyuan</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    A plugin implemented following the tutorial:<br>
+    <em>https://plugins.jetbrains.com/docs/intellij/custom-language-support-tutorial.html</em>
     ]]></description>
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
@@ -14,6 +14,8 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <fileType name="Simple File" implementationClass="pers.liangxuyuan.language.SimpleFileType"
+                  fieldName="INSTANCE" language="Simple" extensions="simple"/>
     </extensions>
 
     <actions>
