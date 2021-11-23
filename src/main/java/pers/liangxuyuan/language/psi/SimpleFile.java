@@ -8,7 +8,7 @@ import pers.liangxuyuan.language.SimpleFileType;
 import pers.liangxuyuan.language.SimpleLanguage;
 
 public class SimpleFile extends PsiFileBase {
-    protected SimpleFile(@NotNull FileViewProvider viewProvider) {
+    public SimpleFile(@NotNull FileViewProvider viewProvider) {
         super(viewProvider, SimpleLanguage.INSTANCE);
     }
 

@@ -16,6 +16,8 @@
         <!-- Add your extensions here -->
         <fileType name="Simple File" implementationClass="pers.liangxuyuan.language.SimpleFileType"
                   fieldName="INSTANCE" language="Simple" extensions="simple"/>
+        <lang.parserDefinition language="Simple"
+                               implementationClass="pers.liangxuyuan.language.SimpleParserDefinition"/>
     </extensions>
 
     <actions>
