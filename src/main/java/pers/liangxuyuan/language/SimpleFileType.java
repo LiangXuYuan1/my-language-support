@@ -34,6 +34,6 @@ public class SimpleFileType extends LanguageFileType {
     @Nullable
     @Override
     public Icon getIcon() {
-        return SimpleIcon.FILE;
+        return SimpleIcons.FILE;
     }
 }
