@@ -1,0 +1,20 @@
+{
+    parserClass="pers.liangxuyuan.language.parser.SimpleParser"
+
+    extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+    psiClassPrefix="Simple"
+    psiImplClassSuffix="Impl"
+    psiPackage="pers.liangxuyuan.language.psi"
+    psiImplPackage="pers.liangxuyuan.language.psi.impl"
+
+    elementTypeHolderClass="pers.liangxuyuan.language.psi.SimpleTypes"
+    elementTypeClass="pers.liangxuyuan.language.psi.SimpleElementType"
+    tokenTypeClass="pers.liangxuyuan.language.psi.SimpleTokenType"
+}
+
+simpleFile ::= item_*
+
+private item_ ::= (property|COMMON|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY
