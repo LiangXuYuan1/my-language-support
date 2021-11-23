@@ -20,6 +20,7 @@
                                implementationClass="pers.liangxuyuan.language.SimpleParserDefinition"/>
         <lang.syntaxHighlighterFactory language="Simple"
                                        implementationClass="pers.liangxuyuan.language.SimpleSyntaxHighlighterFactory"/>
+        <colorSettingsPage implementation="pers.liangxuyuan.language.SimpleColorSettingsPage"/>
     </extensions>
 
     <actions>
