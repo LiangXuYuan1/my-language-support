@@ -1,3 +1,5 @@
+package pers.liangxuyuan.language;
+
 import com.intellij.lang.Language;
 
 public class SimpleLanguage extends Language {
