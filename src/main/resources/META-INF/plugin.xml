@@ -18,6 +18,8 @@
                   fieldName="INSTANCE" language="Simple" extensions="simple"/>
         <lang.parserDefinition language="Simple"
                                implementationClass="pers.liangxuyuan.language.SimpleParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="Simple"
+                                       implementationClass="pers.liangxuyuan.language.SimpleSyntaxHighlighterFactory"/>
     </extensions>
 
     <actions>
