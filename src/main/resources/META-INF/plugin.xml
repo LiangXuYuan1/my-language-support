@@ -23,6 +23,8 @@
                                        implementationClass="pers.liangxuyuan.language.SimpleSyntaxHighlighterFactory"/>
         <colorSettingsPage implementation="pers.liangxuyuan.language.SimpleColorSettingsPage"/>
         <annotator language="JAVA" implementationClass="pers.liangxuyuan.language.SimpleAnnotator"/>
+        <codeInsight.lineMarkerProvider language="JAVA"
+                                        implementationClass="pers.liangxuyuan.language.SimpleLineMarkerProvider"/>
     </extensions>
 
     <actions>
