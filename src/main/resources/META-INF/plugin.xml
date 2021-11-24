@@ -25,6 +25,8 @@
         <annotator language="JAVA" implementationClass="pers.liangxuyuan.language.SimpleAnnotator"/>
         <codeInsight.lineMarkerProvider language="JAVA"
                                         implementationClass="pers.liangxuyuan.language.SimpleLineMarkerProvider"/>
+        <completion.contributor language="Simple"
+                                implementationClass="pers.liangxuyuan.language.SimpleCompletionContributor"/>
     </extensions>
 
     <actions>
