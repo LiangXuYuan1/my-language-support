@@ -33,7 +33,6 @@ public class SimplePsiImplUtil {
     public static PsiElement setName(SimpleProperty element, String newName) {
         ASTNode keyNode = element.getNode().findChildByType(SimpleTypes.KEY);
         if (keyNode != null) {
-
             SimpleProperty property = SimpleElementFactory.createProperty(element.getProject(), newName);
             ASTNode newKeyNode = property.getFirstChild().getNode();
             element.getNode().replaceChild(keyNode, newKeyNode);
