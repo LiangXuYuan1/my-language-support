@@ -30,6 +30,8 @@
         <psi.referenceContributor implementation="pers.liangxuyuan.language.SimpleReferenceContributor"/>
         <lang.refactoringSupport language="Simple"
                                  implementationClass="pers.liangxuyuan.language.SimpleRefactoringSupportProvider"/>
+        <lang.findUsagesProvider language="Simple"
+                                 implementationClass="pers.liangxuyuan.language.SimpleFindUsagesProvider"/>
     </extensions>
 
     <actions>
