@@ -32,6 +32,7 @@
                                  implementationClass="pers.liangxuyuan.language.SimpleRefactoringSupportProvider"/>
         <lang.findUsagesProvider language="Simple"
                                  implementationClass="pers.liangxuyuan.language.SimpleFindUsagesProvider"/>
+        <gotoSymbolContributor implementation="pers.liangxuyuan.language.SimpleChooseByNameContributor"/>
     </extensions>
 
     <actions>

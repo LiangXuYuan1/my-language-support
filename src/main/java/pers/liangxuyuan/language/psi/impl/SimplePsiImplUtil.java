@@ -1,10 +1,16 @@
 package pers.liangxuyuan.language.psi.impl;
 
 import com.intellij.lang.ASTNode;
+import com.intellij.navigation.ItemPresentation;
 import com.intellij.psi.PsiElement;
+import com.intellij.psi.PsiFile;
+import org.jetbrains.annotations.Nullable;
+import pers.liangxuyuan.language.SimpleIcons;
 import pers.liangxuyuan.language.psi.SimpleElementFactory;
 import pers.liangxuyuan.language.psi.SimpleProperty;
 import pers.liangxuyuan.language.psi.SimpleTypes;
+
+import javax.swing.*;
 
 public class SimplePsiImplUtil {
     public static String getKey(SimpleProperty element) {
@@ -47,5 +53,27 @@ public class SimplePsiImplUtil {
         } else {
             return null;
         }
+    }
+
+    public static ItemPresentation getPresentation(final SimpleProperty element) {
+        return new ItemPresentation() {
+            @Nullable
+            @Override
+            public String getPresentableText() {
+                return element.getKey();
+            }
+
+            @Nullable
+            @Override
+            public String getLocationString() {
+                PsiFile containingFile = element.getContainingFile();
+                return containingFile == null ? null : containingFile.getName();
+            }
+
+            @Override
+            public Icon getIcon(boolean unused) {
+                return SimpleIcons.FILE;
+            }
+        };
     }
 }
